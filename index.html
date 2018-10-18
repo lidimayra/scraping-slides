@@ -30,7 +30,7 @@
             #cover h2 {
                 margin: 30px 0 0;
                 color: var(--color-grey);
-                font: bold 50px/1 'PT Sans Narrow', sans-serif;
+                font: bold 100px/1 'PT Sans Narrow', sans-serif;
                 text-align: center;
                 font-size: 70px;
             }
@@ -115,11 +115,11 @@
     </section>
 
     <section class="slide">
-      <h2>Exemplo</h2>
+      <h2>Exemplo de uma Spider</h2>
       <ul>
         <li>Acessa a lista dos <a href="https://www.imdb.com/chart/moviemeter"
             target="_blank">
-            50 filmes mais populares no IMDB</a>
+            100 filmes mais populares no IMDB</a>
         </li>
         <li>Coleta o título de cada filme</li>
         <li>Acessa a página específica de cada filme</li>
@@ -131,6 +131,10 @@
         target="_blank">
         Link para o exemplo no GitHub
       </a>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout shrink">Execução da spider</h2>
     </section>
 
     <section class="slide">
@@ -157,6 +161,44 @@
     <section class="slide">
       <h2>Dashboard</h2>
       <img src="pictures/scrapinghub.png" class="screenshot">
+    </section>
+
+    <section class="slide">
+      <h2>Utilização dos dados</h2>
+      <p>Possibilidades:</p>
+
+      <ul>
+        <li>Download (CSV, JSON JSON Lines, XML)</li>
+        <li>Publicação como um dataset público no Scrapinghub</li>
+        <li>Consumo dos dados através da Scrapy Cloud API</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Scrapy Cloud API</h2>
+      <ul>
+        <li>
+          Permite interagir com as spiders e os dados coletados.
+        </li>
+
+        <li>
+          Endpoints:
+
+          <ul>
+            <li>app.scrapinghub.com</li>
+            <li>storage.scrapinghub.com</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>python-scrapinghub</h2>
+
+      <ul>
+        <li>Client Python: python-scrapinghub</li>
+        <li>Exemplo simples: https://github.com/lidimayra/scrapinghub-api-demo
+      </ul>
     </section>
 
     <section class="slide">
