@@ -13,3 +13,11 @@ div.whoami p {
   margin-bottom: 0;
 }
 
+.slide a {
+  background: none;
+}
+
+.slide a:hover {
+  color: #00a18a;
+  text-decoration: none;
+}
