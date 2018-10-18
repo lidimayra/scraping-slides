@@ -21,3 +21,13 @@ div.whoami p {
   color: #00a18a;
   text-decoration: none;
 }
+
+img.screenshot {
+  width: 700px;
+  padding-bottom: 10px;
+  border: 1px solid gray;
+}
+
+img.screenshot.lm {
+  width: 650px;
+}
