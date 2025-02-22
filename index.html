@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Web Crawling e Scraping com Scrapy e Scrapy Cloud</title>
+    <title>Web Scraping and Crawling with Python</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/shower-ribbon/styles/styles.css">
@@ -20,12 +20,12 @@
 <body class="shower list">
 
     <header class="caption">
-        <h1>Web Crawling e Scraping com Scrapy e Scrapy Cloud</h1>
+        <h1>Web Scraping and Crawling with Python</h1>
         <p>Lidiane Taquehara</p>
     </header>
 
     <section class="slide" id="cover">
-        <h2>Web Crawling e Scraping com Scrapy e Scrapy Cloud</h2>
+        <h2>Web Scraping and Crawling with Python</h2>
         <style>
             #cover h2 {
                 margin: 30px 0 0;
@@ -50,34 +50,31 @@
     </section>
 
     <section class="slide whoami">
-      <h2>>whoami</h2>
+      <h2>whoami</h2>
       <img src="pictures/lidi.jpg" width="20%" style="border:1px solid black">
       <div class="whoami">
         <p><strong>Lidiane Taquehara</strong></p>
         <a href="https://github.com/lidimayra" target="_blank">
-          <span class='fab fa-github-square fa-2x'></span>
+          <span class='fab fa-github fa-1x'></span>
         </a>
 
-        <a href="https://www.twitter.com/lidimayra" target="_blank">
-          <span class='fab fa-twitter-square fa-2x'></span>
+        <a href="https://stackoverflow.com/users/4387278" target="_blank">
+          <span class='fab fa-stack-overflow fa-1x'></span>
         </a>
 
         <a href="https://www.linkedin.com/in/lmayra/" target="_blank">
-          <span class='fab fa-linkedin fa-2x'></span>
+          <span class='fab fa-linkedin fa-1x'></span>
         </a>
 
         <a href="mailto:lidi.mayra@gmail.com">
-          <span class='fas fa-envelope-square fa-2x'></span>
+          <span class='fas fa-envelope fa-1x'></span>
         </a>
       </div>
       <ul>
         <li>
-          Tecnóloga em Análise e Desenvolvimento de Sistemas pela
-          <a href="http://www.fatecjd.edu.br" target="_blank">FATEC Jundiaí</a>
-        </li>
+          Brazilian immigrant, living in London</li>
         <li>
-          Back-end developer na
-          <a href="https://www.lovemondays.com.br/" target="_blank">Love Mondays</a>
+          Software engineer at <a href="https://www.artsy.net" target="_blank">Artsy</a>
         </li>
       </ul>
     </section>
@@ -91,75 +88,71 @@
     </section>
 
     <section class="slide">
-      <h2>Web Crawling e Scraping no Love Mondays</h2>
-      <a href="https://www.lovemondays.com.br/pesquisa/vaga?q=Python"
-         target="_blank">
-        <img src="pictures/lovemondays.png" class="screenshot lm">
-      </a>
-
+      <h2>Web Crawling and Scraping at Love Mondays</h2>
+      <img src="pictures/lovemondays.png" class="screenshot lm">
     </section>
 
     <section class="slide">
         <h2>Scrapy</h2>
         <ul>
-          <li>Framework Python voltado para scraping e crawling</li>
+          <li>Python framework focused on scraping and crawling</li>
           <li>Open Source</li>
-          <li>Construído em cima do <a href="https://twistedmatrix.com"
+          <li>Built on top of <a href="https://twistedmatrix.com"
           target="_blank">Twisted</a>
               <ul>
-                <li>Eficiente</li>
-                <li>Assíncrono</li>
+                <li>Efficient</li>
+                <li>Asynchronous</li>
               </ul>
             </li>
         </ul>
     </section>
 
     <section class="slide">
-      <h2>Exemplo de uma Spider</h2>
+      <h2>Spider example</h2>
       <ul>
-        <li>Acessa a lista dos <a href="https://www.imdb.com/chart/moviemeter"
-            target="_blank">
-            100 filmes mais populares no IMDB</a>
+        <li>Access the <a href="https://www.rottentomatoes.com/browse/movies_in_theaters/sort:popular" target="_blank">
+            most popular movies list on Rotten Tomatoes</a>
         </li>
-        <li>Coleta o título de cada filme</li>
-        <li>Acessa a página específica de cada filme</li>
-        <li>Coleta também a sinopse e o nome do diretor</li>
+        <li>Collect the movie title</li>
+        <li>Access the linked page for each movie in that list</li>
+        <li>On the movie details page, collect the movie summary and the director name</li>
       </ul>
 
       <a
-        href="https://github.com/lidimayra/scrapy-basics/blob/master/most_popular_movies/spiders/most_popular_movies.py"
+        href="https://github.com/lidimayra/scrapy-basics/blob/main/spider_samples/spiders/most_popular_movies.py"
         target="_blank">
-        Link para o exemplo no GitHub
+        See the example on GitHub
       </a>
     </section>
 
     <section class="slide">
-      <h2>O código</h2>
+      <h2>Digging the code</h2>
       <code>name = 'most_popular_movies'</code>
-      <p>O nome que identifica a spider</p>
+      <p>Define a unique identifier for the spider</p>
 
-      <code>start_urls = ['https://www.imdb.com/chart/moviemeter']</code>
-      <p>O ponto de partida da spider</p>
+      <code>start_urls = ['https://www.rottentomatoes...popular']</code>
+
+      <p>Specify the initial url to be hit by the spider</p>
 
       <code>parse()</code>
-      <p>Método que manipula a resposta recebida por cada requisição feita.</p>
+      <p>Manipulate the responses for each one of the requests</p>
     </section>
 
     <section class="slide">
-      <h2 class="shout shrink">Execução da spider</h2>
+      <h2 class="shout shrink">Running the spider</h2>
     </section>
 
     <section class="slide">
-      <h2 class="shout shrink">Gerenciamento dos dados na nuvem</h2>
+      <h2 class="shout shrink">Data management in the cloud</h2>
     </section>
 
     <section class="slide">
-      <h2>Scrapinghub</h2>
+      <h2>Zyte (formerly Scrapinghub)</h2>
       <ul>
           <li>
-            Criação e manutenção do Scrapy
+            Creators and maintainers of Scrapy
             <ul>
-              <li>Data on Demand</li>
+              <li>Zyte Managed Data (Data on Demand)</li>
               <li>Scrapy Cloud</li>
             </ul>
           </li>
@@ -169,39 +162,27 @@
     <section class="slide">
       <h2>Scrapy Cloud</h2>
       <ul>
-        <li>Execução de web crawling em nuvem</li>
-        <li>Armazenamento dos dados em um banco de alta disponibilidade</li>
+        <li>Host and monitor spiders in the cloud</li>
+        <li>High availability database</li>
       </ul>
     </section>
 
     <section class="slide">
-      <h2>Tecnologias</h2>
-      <img src="pictures/portia_scrapy.png" class="technologies">
-    </section>
-
-    <section class="slide">
-      <h2>Dashboard</h2>
-      <img src="pictures/scrapinghub.png" class="screenshot">
-    </section>
-
-    <section class="slide">
-      <h2>Utilização dos dados</h2>
-      <p>Possibilidades:</p>
-
+      <h2>Data usage options</h2>
       <ul>
         <li>Download (CSV, JSON JSON Lines, XML)</li>
-        <li>Publicação como um dataset público no Scrapinghub</li>
-        <li>Consumo dos dados através da Scrapy Cloud API</li>
+        <li>Dataset publishing and sharing on Zyte</li>
+        <li>Query the data via <a href="https://docs.zyte.com/scrapy-cloud/usage/reference/http/index.html"
+                                  target="_blank">Scrapy Cloud API</a></li>
       </ul>
     </section>
 
     <section class="slide">
       <h2>Scrapy Cloud API</h2>
+      <p>
+        It enables interactions with the spiders, the collected data and cloud management
+      <p>
       <ul>
-        <li>
-          Permite interagir com as spiders e os dados coletados.
-        </li>
-
         <li>
           Endpoints:
 
@@ -217,8 +198,8 @@
       <h2>python-scrapinghub</h2>
 
       <ul>
-        <li>Client Python: python-scrapinghub</li>
-        <li>Exemplo simples:
+          <li>Python client: <a href="https://github.com/scrapinghub/python-scrapinghub" target="_blank">python-scrapinghub</a></li>
+        <li>Simple example:
           <a href="https://github.com/lidimayra/scrapinghub-api-demo" target="_blank">
             https://github.com/lidimayra/scrapinghub-api-demo
           </a>
@@ -226,19 +207,19 @@
     </section>
 
     <section class="slide">
-      <h2>Para saber mais:</h2>
+      <h2>References:</h2>
       <ul>
         <li>
-          <a href="https://scrapy.org/">Scrapy - Site oficial</a>
+          <a href="https://scrapy.org/">Scrapy - Official website</a>
         </li>
         <li>
           <a href="https://github.com/scrapy">Scrapy - GitHub</a>
         </li>
         <li>
-          <a href="https://scrapinghub.com/">Scrapinghub - Site oficial</a>
+          <a href="https://www.zyte.com">Zyte - Official website</a>
         </li>
         <li>
-          <a href="https://github.com/scrapinghub/">Scrapinghub - GitHub</a>
+          <a href="https://github.com/zytedata">Zyte - GitHub</a>
         </li>
       </ul>
     </section>
@@ -246,10 +227,10 @@
     <section class="slide">
       <span class="shout shrink">
         <h2>
-          <p>Muito obrigada!!</p>
+          <p>Thank you so much!</p>
 
-          <p>Apresentação disponível em:</p>
-          <p>https://scrapy-slides.netlify.com</p>
+          <p>This presentation is available in:</p>
+          <p>https://scraping-slides.netlify.app</p>
         </h2>
       </span>
     </section>
