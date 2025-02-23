@@ -84,6 +84,38 @@
     </section>
 
     <section class="slide">
+        <h2>Let's scrape Pycon Austria blog</h2>
+        <img src="pictures/pycon_blog.png" class="screenshot pyconblog">
+    </section>
+
+    <section class="slide">
+        <h2>Beautiful Soup</h2>
+        <pre>
+            <code>import requests</code>
+            <code>from bs4 import BeautifulSoup</code>
+            <code> </code>
+            <code>response = requests.get('https://pycon.pyug.at/en/blog/')</code>
+            <code>soup = BeautifulSoup(response.text, 'html.parser')</code>
+            <code>for element in soup.find_all("h2"):</code>
+            <code>  print(element.text)</code>
+        </pre>
+    </section>
+
+    <section class="slide prompt">
+        <pre>
+            <code>$ python example.py</code>
+            <code>Embracing opportunities in 2025: PyCon Austria is closer than ever!</code>
+            <code>Interview with our sponsor Bitpanda</code>
+            <code>Interview with Professor Robert Matzinger of the UAS Burgenland</code>
+            <code>Interview with Thomas Mitzka</code>
+            <code>Interviews with Horst JENS and Ralf SCHLATTERBECK, PhD</code>
+            <code>Interviews with Ivana Kellyerova</code>
+            <code>call for papers (call for volunteers)</code>
+            <code>Interviews: Týna Doležalová, Lubomír Doležal</code>
+        </pre>
+    </section>
+
+    <section class="slide">
         <h2 class="shout shrink">Web Crawling</h2>
     </section>
 

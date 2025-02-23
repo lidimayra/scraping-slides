@@ -32,5 +32,27 @@ img.screenshot.lm {
   width: 650px;
 }
 
+img.screenshot.pyconblog {
+  height: 75%;
+  width: 75%;
+}
+
 img.technologies {
   width: 800px;
+}
+
+.slide.prompt {
+  padding-top: 90px;
+  background-color: black;
+  color: #FFF;
+  overflow: visible;
+}
+
+.slide.prompt pre code {
+  line-height: 1.4;
+  padding-left: 2px;
+}
+
+.slide.prompt pre code::before {
+  content: unset;
+}
