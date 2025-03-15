@@ -56,3 +56,9 @@ img.technologies {
 .slide.prompt pre code::before {
   content: unset;
 }
+
+.beautifulsoup {
+  width: 40%;
+  margin: auto;
+  display: block;
+}
