@@ -18,7 +18,7 @@ div.whoami p {
 }
 
 .slide a:hover {
-  color: #00a18a;
+  color: #4B8BBE;
   text-decoration: none;
 }
 
@@ -61,4 +61,14 @@ img.technologies {
   width: 40%;
   margin: auto;
   display: block;
+}
+
+.shower {
+  --ribbon-size: 40px;
+  --color-blue: #306998;
+}
+
+.slide::after {
+  background-image: url('pictures/ribbon.svg');
+  color: #FFD43B;
 }
