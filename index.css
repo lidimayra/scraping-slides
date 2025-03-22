@@ -22,6 +22,14 @@ div.whoami p {
   text-decoration: none;
 }
 
+p.note {
+  font-size: 20px;
+}
+
+img.photos {
+    width: 400px
+}
+
 img.screenshot {
   width: 700px;
   padding-bottom: 10px;
